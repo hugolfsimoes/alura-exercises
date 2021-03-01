@@ -1,3 +1,6 @@
+import BotaoConclui from "./componentes/concluiTarefa.js"
+import BotaoDeleta from "./componentes/deletaTarefa.js"
+
 const criarTarefa = (evento) => {
 
   evento.preventDefault();
@@ -13,6 +16,9 @@ const criarTarefa = (evento) => {
 
 
   tarefa.innerHTML = conteudo;
+
+  tarefa.appendChild(BotaoConclui());
+  tarefa.appendChild(BotaoDeleta());
   lista.appendChild(tarefa);
   input.value = "";
 }

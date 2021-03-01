@@ -28,13 +28,15 @@ cliente2.cpf = 88822233309;
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
-console.log(contaCorrenteRicardo.saldo);
-contaCorrenteRicardo.saldo = 100;
-console.log(contaCorrenteRicardo.saldo);
-
-contaCorrenteRicardo.sacar(200);
-console.log(contaCorrenteRicardo.saldo);
 
 
+console.log(contaCorrenteRicardo.saldo);
+contaCorrenteRicardo.saldo += 100;
+console.log(contaCorrenteRicardo.saldo);
+
+contaCorrenteRicardo.sacar(50);
+
+
+console.log(contaCorrenteRicardo.saldo);
 console.log(cliente1);
 console.log(cliente2);
