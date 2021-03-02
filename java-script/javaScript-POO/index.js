@@ -15,6 +15,13 @@ class ContaCorrente {
     }
 
   }
+
+  depositar(valor) {
+    if (valor > 0) {
+      this.saldo += valor;
+    }
+  }
+
 }
 
 const cliente1 = new Cliente();
@@ -31,7 +38,9 @@ contaCorrenteRicardo.agencia = 1001;
 
 
 console.log(contaCorrenteRicardo.saldo);
-contaCorrenteRicardo.saldo += 100;
+contaCorrenteRicardo.depositar(100);
+contaCorrenteRicardo.depositar(200);
+contaCorrenteRicardo.depositar(-1);
 console.log(contaCorrenteRicardo.saldo);
 
 contaCorrenteRicardo.sacar(50);
