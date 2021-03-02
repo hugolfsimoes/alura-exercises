@@ -37,15 +37,8 @@ contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
 
 
-console.log(contaCorrenteRicardo.saldo);
 contaCorrenteRicardo.depositar(100);
-contaCorrenteRicardo.depositar(200);
-contaCorrenteRicardo.depositar(-1);
-console.log(contaCorrenteRicardo.saldo);
-
 contaCorrenteRicardo.sacar(50);
 
 
-console.log(contaCorrenteRicardo.saldo);
-console.log(cliente1);
-console.log(cliente2);
+console.log(contaCorrenteRicardo);
