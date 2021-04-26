@@ -4,10 +4,6 @@ import {
 
 export class ContaCorrente {
   static numeroDeContas = 0;
-  agencia;
-  _cliente;
-
-  _saldo = 0;
 
   set cliente(novoValor) {
 
@@ -25,6 +21,7 @@ export class ContaCorrente {
   constructor(cliente, agencia) {
     this.agencia = agencia;
     this.cliente = cliente;
+    this._saldo = 0;
     ContaCorrente.numeroDeContas += 1;
   }
 
@@ -39,7 +36,7 @@ export class ContaCorrente {
   }
 
   depositar(valor) {
-    if (valor <= 0) {
+    if (valor <= 100) {
       return;
     }
     this._saldo += valor;
