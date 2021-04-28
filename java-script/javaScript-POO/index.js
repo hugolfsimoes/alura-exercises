@@ -1,9 +1,5 @@
-import {
-  Cliente
-} from "./Cliente.js"
-import {
-  ContaCorrente
-} from "./ContaCorrente.js"
+import { Cliente } from "./Cliente.js"
+import { ContaCorrente } from "./ContaCorrente.js"
 import { ContaPoupanca } from "./ContaPoupanca.js";
 
 
